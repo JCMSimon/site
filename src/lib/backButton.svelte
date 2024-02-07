@@ -1,8 +1,10 @@
 <script>
 	import { base } from '$app/paths';
+	
+	export let scale = 1
 </script>
 
-<a href="{base}/" class="backButton">Back</a>
+<a href="{base}/" style="scale: {scale}" class="backButton">Back</a>
 
 <style>
 	.backButton {

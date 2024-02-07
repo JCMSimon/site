@@ -1,9 +1,9 @@
 <script>
-	import { isAuthenticated } from './thoughtsManageSiteLib/store.js';
-	import { passwordStore } from './thoughtsManageSiteLib/store.js';
-	import API from './thoughtsManageSiteLib/api.js';
+	import { isAuthenticated } from '$lib/thoughtsManageSite/store.js';
+	import { passwordStore } from '$lib/thoughtsManageSite/store.js';
+	import API from '$lib/thoughtsManageSite/api.js';
 	import { onMount } from 'svelte';
-	import ManageThought from './thoughtsManageSiteLib/manageThought.svelte';
+	import ManageThought from '$lib/thoughtsManageSite/manageThought.svelte';
 
 	
 	// Subscribe to stores

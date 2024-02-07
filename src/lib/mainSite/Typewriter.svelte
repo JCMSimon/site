@@ -3,17 +3,16 @@
 
 	let textElement;
 	let strings = [
-		"self taught developer", // main
-		"random german guy",	 // well i am
-		"python user (it good)", // python
-		"public data enjoyer",   // osint
-		"free life appreciator", // well, ye again
+		"self taught developer", 
+		"random german dude",	 
+		"public data enjoyer",   
+		"free life appreciator", 
 ];
 	let stringIndex = 0;
 	let charIndex = 0;
 	let isDeleting = false;
 
-	function type() {
+	function type() {	
 	  const currentString = strings[stringIndex];
 	  if (!isDeleting) {
 		textElement.textContent = currentString.substring(0, charIndex + 1);
@@ -34,7 +33,7 @@
 		if (isDeleting) {
 			setTimeout(type, 40); // Typing speed
 		} else {
-			setTimeout(type, Math.random() * 180 + 70); // Randomise Typing speed if its not deleting
+			setTimeout(type, Math.random() * 180 + 90); // Randomise Typing speed if its not deleting
 		}
 	  }
 	}
@@ -50,11 +49,11 @@
 .typewriter {
 	font-family: Roboto;
 	color: white;
-	font-size: max(2.8vw,29.3px);
+	font-size: max(2.72vw,37px);
 	font-weight: 400;
 	margin: 0;
 	border-bottom: 1.1vmin dashed white;
-	padding-bottom: max(1vh,6px);
+	padding-bottom: max(1vh,10px);
 	overflow: hidden;
 }
 .typewriter::before {
@@ -65,7 +64,7 @@
 	position: absolute;
 	content: "┃";
 	font-family: monospace;
-	animation: blink 1s infinite;
+	animation: blink 1s ease-in-out infinite;
 }
 
 
@@ -75,5 +74,6 @@
 }
 50% {
 	color: black;
+
 }
 }  </style>

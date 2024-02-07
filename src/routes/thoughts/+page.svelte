@@ -1,5 +1,5 @@
 <script>
-    import BackButton from "../backButton.svelte";
+    import BackButton from "$lib/backButton.svelte";
 </script>
 
 <body>
