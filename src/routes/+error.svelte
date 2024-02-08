@@ -5,7 +5,7 @@
 	import BackButton from "$lib/backButton.svelte"
 	
 	let randomCatImage = "";
-  
+   
 	onMount(async () => {
 	  try {
 		const response = await fetch("https://api.thecatapi.com/v1/images/search?breed_ids=black");
