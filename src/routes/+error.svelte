@@ -41,6 +41,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 2vh;
+		overflow: hidden;
 	}
 	
 	.text {
@@ -62,7 +63,7 @@
 		max-width: 90vw;
 		padding: 1vh;
 		z-index: 5;
-		transform: translateY(-3.5vh);
+		transform: translateY(-3vh);
 	}
 	
 </style>
