@@ -1,12 +1,20 @@
 <script>
-	export let link
+	import { base } from '$app/paths';
+	
+	export let link=null
 	export let altText
 	export let iconName
 </script>
 
+{#if (link)}
 <a class="icon" href="{link}" target="_blank">
-	<img class="iconImg" src="icons/{iconName}.svg" alt="{altText}">
+	<img class="iconImg" src="{base}/icons/{iconName}.svg" alt="{altText}">
 </a>
+{:else}
+<button class="icon">
+	<img class="iconImg" src="{base}/icons/{iconName}.svg" alt="{altText}">
+</button>
+{/if}
 
 <style>
 

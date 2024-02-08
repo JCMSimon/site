@@ -23,8 +23,11 @@
 		<h2 style="color:white">Looking for a cute cat...</h2>
 	{:then _} 
 		{#if randomCatImage}
-			<h2 class="description text">This is not a valid url but... take this cat!</h2>
-			<img class="img404 ctm-border" src={randomCatImage} alt="A (probably) really cute cat :3" />
+			<h2 class="description text">Im not sure what went wrong but... take this cat!</h2>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+			<!-- Disabling it is fine, i made sure to adjust the pointer in css and give it a title that tells you that you can click it -->
+			<img class="img404 ctm-border" on:click={() => getImage()} src={randomCatImage} title="Click to get a different image" alt="A (probably) really cute cat :3" />
 		{:else}
 			<h2 class="description text">This is not a valid url and... id show you a cute cat but that didnt work :c</h2>
 			<img class="img404 ctm-border" src="{base}/logo.svg" alt="JCMS" title="just my logo :c (take at least this cat: 🐈)" />
@@ -55,6 +58,7 @@
 		max-height: 30%;
 		min-height: 0px;
 		transition: 0.5s ease-out;
+		cursor: pointer;
 	}
 	
 	.img404:hover {
@@ -65,5 +69,4 @@
 		z-index: 5;
 		transform: translateY(-3vh);
 	}
-	
 </style>

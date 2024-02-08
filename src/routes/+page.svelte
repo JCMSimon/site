@@ -5,7 +5,7 @@
 	import Logo from '$lib/mainSite/Logo.svelte';
 	import Typewriter from '$lib/mainSite/Typewriter.svelte';
     import Link from '$lib/mainSite/Link.svelte';
-    import Icon from '$lib/mainSite/Icon.svelte';
+    import Icon from '$lib/Icon.svelte';
 </script>
 
 <!------------- TODO ------------->

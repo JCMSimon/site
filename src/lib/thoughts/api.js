@@ -11,7 +11,7 @@ class API {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                pw: password
+                password: password
             })
         });
 
@@ -27,12 +27,12 @@ class API {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                pw: password
+                password: password
             })
         });
-
+        
         const data = await response.json();
-        return data;
+        return data["message"];
     }
 }
 
