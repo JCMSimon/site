@@ -19,14 +19,14 @@
 <style>
 
 .icon {
-	background-color: black;
+	background-color: transparent;
 	border: none;
 	min-height: 31.5px;
 	min-width: 31.5px;
 	height: 3vw;
 	width: 3vw;
 	cursor: pointer;
-	transition: 200ms filter;
+	transition: 200ms;
 	border-radius: 69%;
 	display: flex;
 	justify-content: center;
@@ -34,6 +34,7 @@
 }
 
 .icon:hover{
+	background-color: black;
 	filter:invert();
 }
 </style>

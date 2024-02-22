@@ -6,7 +6,7 @@
 	export let date
 	
 	export let manage=false
-	export let isPublic	
+	export let isPublic=false	
 
 	function convertUnixToDateString(unixTimestamp) {
 	// Convert Unix timestamp to milliseconds
@@ -32,6 +32,11 @@
 
 	let dateText = convertUnixToDateString(date)
 
+	function togglePublic() {
+		console.log("doing smth")
+		isPublic = !isPublic	
+	}
+
 </script>
 
 <div class="thoughtContainer">
@@ -40,9 +45,9 @@
 	{#if (manage)}
 		<div class="iconContainer">
 			{#if (isPublic)}
-				<Icon altText="Turn private" iconName="public"></Icon>
+				<Icon altText="Turn private" iconName="discord" on:click={togglePublic}></Icon>
 			{:else}
-				<Icon altText="Turn public" iconName=private></Icon>
+				<Icon altText="Turn public" iconName="twitter" on:click={togglePublic}></Icon>
 			{/if}
 			<Icon altText="Open" iconName="view"></Icon>
 			<Icon altText="Rename" iconName="rename"></Icon>

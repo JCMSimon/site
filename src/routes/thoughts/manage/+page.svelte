@@ -9,24 +9,12 @@
 
 
 
-<body>	
+<!-- <body>	 -->
 	<!-- <PasswordLocked> -->
 		<BlogBoilerplate title="Thoughts - Dashboard">
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={false} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning dwaa aaaa a aaaaa a aaaa a of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning dwaa aaaa a aaaaa a aaaa a of ddd" date="1315486468" isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={false} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
-			<Thought title="Meaning of ddd" date="1315486468" manage={false} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
@@ -35,9 +23,32 @@
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
 			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddd" date="1315486468" manage={true} isPublic={true} />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
+			<Thought title="Meaning of ddddawdwd" date="1315486468" />
 		</BlogBoilerplate>
 	<!-- </PasswordLocked> -->
-</body>
+<!-- </body> -->
 
 <style>
+	
 </style>
