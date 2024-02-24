@@ -43,18 +43,22 @@
 	});
 	</script>
 
-<div class="typewriter" bind:this={textElement}></div>
+<div class="typewriter sn" bind:this={textElement}></div>
 
 <style>
 .typewriter {
 	font-family: Roboto;
-	color: white;
+	color: var(--clr-accent);
 	font-size: max(2.72vw,37px);
 	font-weight: 400;
 	margin: 0;
-	border-bottom: 1.1vmin dashed white;
+	border-bottom: 1.1vmin dashed var(--clr-accent);
 	padding-bottom: max(1vh,10px);
+	max-width: calc(29vw * var(--slider-size));
+	/* Cut text off if i ever fuck up */
+	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .typewriter::before {
 	content: "A ";
@@ -67,13 +71,11 @@
 	animation: blink 1s ease-in-out infinite;
 }
 
-
 @keyframes blink {
 0%, 100% {
-	color: white;
+	color: var(--clr-accent);
 }
 50% {
-	color: black;
-
+	color: var(--clr-background);
 }
 }  </style>

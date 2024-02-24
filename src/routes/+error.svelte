@@ -1,8 +1,7 @@
 <script>
-	import { onMount } from "svelte";
 	import { page } from "$app/stores";
 	import { base } from '$app/paths';
-	import BackButton from "$lib/backButton.svelte"
+	import BackButton from "$lib/soon/backButton.svelte"
 	
 	let randomCatImage = "";
    
@@ -18,12 +17,12 @@
   </script>
 
 <div class="content">
-	<h1 class="title text">{$page.status} - {$page.error.message}</h1>
+	<h1 class="text">{$page.status} - {$page.error.message}</h1>
 	{#await getImage()}
-		<h2 style="color:white">Looking for a cute cat...</h2>
+		<h2 class="text">Looking for a cute cat...</h2>
 	{:then _} 
 		{#if randomCatImage}
-			<h2 class="description text">Im not sure what went wrong but... take this cat!</h2>
+			<h2 class="text">Found one!</h2>
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 			<!-- Disabling it is fine, i made sure to adjust the pointer in css and give it a title that tells you that you can click it -->
@@ -48,25 +47,25 @@
 	}
 	
 	.text {
-		color: white;
+		color: var(--clr-accent);
 		font-family: Roboto;
 	}
 	
 	.img404 {
-		border-color: black;
+		border-color: var(--clr-background);
 		max-width: 80%;
 		max-height: 30%;
-		min-height: 0px;
 		transition: 0.5s ease-out;
 		cursor: pointer;
+		/* Need this for the transition to work */
+		min-height: 0px;
 	}
-	
 	.img404:hover {
-		border-color: white;
+		border-color: var(--clr-accent);
 		min-height: 96vh;
 		max-width: 90vw;
 		padding: 1vh;
 		z-index: 5;
 		transform: translateY(-3vh);
-	}
+	}	
 </style>

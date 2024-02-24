@@ -33,8 +33,7 @@
 	let dateText = convertUnixToDateString(date)
 
 	function togglePublic() {
-		console.log("doing smth")
-		isPublic = !isPublic	
+		isPublic = !isPublic
 	}
 
 </script>

@@ -4,22 +4,17 @@
 	export let scale = 1
 </script>
 
-<a href="{base}/" style="scale: {scale}" class="backButton">Back</a>
+<a href="{base}/" style="scale: {scale}" class="backButton ctm-border ns invert-hover">Back</a>
 
 <style>
 	.backButton {
-		background-color: black;
-		color: white;
+		background-color: var(--clr-background);
+		color: var(--clr-accent);
 		font-family: roboto;
 		font-size: 5vw;
-		border: 0.5vmin solid white;
 		border-radius: 30px;
 		padding: 1vmin;
 		margin-top: 0;
 		text-decoration: none;
-	}
-
-	.backButton:hover {
-		filter: invert();
 	}
 </style>

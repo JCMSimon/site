@@ -7,11 +7,11 @@
 </script>
 
 {#if (link)}
-<a class="icon" href="{link}" target="_blank">
+<a class="icon flex-center invert-hover sn" href="{link}" target="_blank">
 	<img class="iconImg" src="{base}/icons/{iconName}.svg" alt="{altText}">
 </a>
 {:else}
-<button class="icon">
+<button class="icon flex-center invert-hover sn">
 	<img class="iconImg" src="{base}/icons/{iconName}.svg" alt="{altText}">
 </button>
 {/if}
@@ -19,22 +19,13 @@
 <style>
 
 .icon {
-	background-color: transparent;
-	border: none;
-	min-height: 31.5px;
-	min-width: 31.5px;
-	height: 3vw;
-	width: 3vw;
+	background-color: var(--clr-background);
+	min-height: calc(31.5px * var(--slider-size));
+	min-width: calc(31.5px * var(--slider-size));
+	height: calc(3vw * var(--slider-size));
+	width: calc(3vw * var(--slider-size));
 	cursor: pointer;
-	transition: 200ms;
 	border-radius: 69%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
-.icon:hover{
-	background-color: black;
-	filter:invert();
-}
 </style>

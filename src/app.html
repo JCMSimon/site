@@ -17,22 +17,39 @@
 
 <style>
 	:root {
-		--slider-size: 1
-	}
-	
-	html {
-		overflow-x: hidden;
-		min-height: fit-content;
+		--slider-size: 1;
+		--clr-background: black;
+		--clr-accent: white;
 	}
 	
 	body {
-		background-color: black;
+		background-color: var(--clr-background);
 		height: 100vh;
-		min-width: 100vw;
 		margin: 0;
 	}
 	
 	.ctm-border {
-		border: 0.5vmin solid white;
+		/* 
+			Main border used for all things that need a border (lol)
+		*/
+		border: 0.5vmin solid var(--clr-accent);
+	}
+	
+	.flex-center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.invert-hover {
+		transition: 200ms filter;
+	}	
+	
+	.invert-hover:hover {
+		filter:invert();
+	}
+	
+	.sn {
+		user-select: none;
 	}
 </style>
