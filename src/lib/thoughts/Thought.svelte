@@ -1,6 +1,6 @@
 <script>
 	import { base } from '$app/paths';
-	import Icon from "$lib/Icon.svelte";
+	import Icon from "$lib/generic/Icon.svelte";
 
 	export let title
 	export let date
@@ -72,7 +72,7 @@
 	}
 	
 	.thoughtTitle {
-		color: white;
+		color: var(--clr-accent);
 		font-family: Roboto;
 		font-size: 8vh;
 		margin: 0;
@@ -90,7 +90,7 @@
 	}
 	
 	.dateText {
-		color: white;
+		color: var(--clr-accent);
 		font-family: Roboto;
 		font-size: 5vh;
 		margin: 0;
@@ -98,5 +98,5 @@
 		white-space: nowrap;
 	}
 	
-
+	
 </style>

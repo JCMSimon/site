@@ -45,6 +45,7 @@
 	
 	.content {
 		width: 85vw;
+		padding-bottom: 1vh;
 	}
 	
 	.watermark {
